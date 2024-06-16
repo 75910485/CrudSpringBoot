@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Editar Dirección</title>
+</head>
+<body>
+    <h1>Editar Dirección</h1>
+    <form th:action="@{/direcciones}" th:object="${direccion}" method="post">
+        <input type="hidden" th:field="*{id}" />
+        <label for="calle">Calle:</label>
+        <input type="text" id="calle" th:field="*{calle}" /><br/>
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" id="ciudad" th:field="*{ciudad}" /><br/>
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" th:field="*{estado}" /><br/>
+        <label for="codigoPostal">Código Postal:</label>
+        <input type="text" id="codigoPostal" th:field="*{codigoPostal}" /><br/>
+        <button type="submit">Guardar</button>
+    </form>
+    <a th:href="@{/direcciones}">Regresar</a>
+</body>
+</html>
