@@ -23,7 +23,7 @@ import javax.xml.bind.annotation.XmlRootElement;
     , @NamedQuery(name = "Transacciones.findByIdTransacciones", query = "SELECT f FROM Transacciones f WHERE f.idTransacciones = :idTransacciones")
     , @NamedQuery(name = "Transacciones.findByTipo", query = "SELECT f FROM Transacciones f WHERE f.tipo = :tipo")
     , @NamedQuery(name = "Transacciones.findByFecha", query = "SELECT f FROM Transacciones f WHERE f.fecha = :fecha")
-    , @NamedQuery(name = "Transacciones.findByUsuario", query = "SELECT f FROM Transacciones f WHERE f.Usuario = :usuario")
+    , @NamedQuery(name = "Transacciones.findByUsuario", query = "SELECT f FROM Transacciones f WHERE f.usuario = :usuario")
     , @NamedQuery(name = "Transacciones.findByHora", query = "SELECT f FROM Transacciones f WHERE f.hora = :hora")})
 	
 
